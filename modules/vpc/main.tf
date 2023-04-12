@@ -59,6 +59,7 @@ resource "aws_route_table" "public_route_table" {
     gateway_id = aws_internet_gateway.internet_gateway.id
   }
 
+# create route table and add public route for ipv6
 #  route {
 #    ipv6_cidr_block = "::/0"
 #    gateway_id = aws_internet_gateway.internet_gateway.id
